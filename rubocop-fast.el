@@ -210,9 +210,9 @@ function."
              (if errbuf
                  (rubocop-fast--process-errors errorfile errbuf))
              )))
-     ;; (kill-buffer patchbuf)
-     ;; (delete-file errorfile)
-     ;; (delete-file outputfile)
+     (kill-buffer patchbuf)
+     (delete-file errorfile)
+     (delete-file outputfile)
 ))
 
 ;;;###autoload
